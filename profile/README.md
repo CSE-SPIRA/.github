@@ -39,7 +39,7 @@ An order can point to a gathering, a trip, a new pet, a seasonal change, and mor
 ## 🔧 Architecture Design
 
 <p align="center">
-  <img src="./assets/architecture.png" alt="SPIRA Architecture" width="100%">
+  <img src="./assets/architecture-v2.png" alt="SPIRA Architecture" width="100%">
 </p>
 
 | Part | Role | Stack |
