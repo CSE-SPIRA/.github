@@ -36,6 +36,17 @@ An order can point to a gathering, a trip, a new pet, a seasonal change, and mor
 
 <br/>
 
+## 📄 Documentation
+
+*SPIRA: Proactively Preparing Smart Homes via Retrieval-Augmented Purchase Intent Inference over Synthetic Knowledge*
+
+| Course | Documents |
+| --- | --- |
+| Software Engineering (CSE406) | [Paper (PDF)](https://github.com/CSE-SPIRA/SPIRA/blob/main/document/main.pdf) · [LaTeX Source](https://github.com/CSE-SPIRA/SPIRA/blob/main/document/main.tex) |
+| AI & Applications (ITE351) | Paper — coming soon |
+
+<br/>
+
 ## 🔧 Architecture Design
 
 <p align="center">
@@ -56,17 +67,6 @@ An order can point to a gathering, a trip, a new pet, a seasonal change, and mor
 ## 🎥 Demo Video
 
 Coming soon.
-
-<br/>
-
-## 📄 Documentation
-
-*SPIRA: Proactively Preparing Smart Homes via Retrieval-Augmented Purchase Intent Inference over Synthetic Knowledge*
-
-| Course | Documents |
-| --- | --- |
-| Software Engineering (CSE406) | [Paper (PDF)](https://github.com/CSE-SPIRA/SPIRA/blob/main/document/main.pdf) · [LaTeX Source](https://github.com/CSE-SPIRA/SPIRA/blob/main/document/main.tex) |
-| AI & Applications (ITE351) | Paper — coming soon |
 
 <br/>
 
