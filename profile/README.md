@@ -38,15 +38,18 @@ An order can point to a gathering, a trip, a new pet, a seasonal change, and mor
 
 ## 🔧 Architecture Design
 
-<!-- TODO: architecture image -->
+<p align="center">
+  <img src="./assets/architecture.png" alt="SPIRA Architecture" width="100%">
+</p>
 
 | Part | Role | Stack |
 | --- | --- | --- |
 | **App** | Share order screenshots, see the preparation card, stop or switch off lines | Flutter |
-| **Server** | Extract items → retrieve similar cases → judge intent → create tasks → confirm plan | Python · FastAPI · LLM API |
-| **Knowledge Base** | Synthetic purchase-intent cases and embeddings | PostgreSQL + pgvector · BGE-M3 |
-| **Home Hub** | Pull the plan, wait for triggers, execute, read back, restore | Python · FastAPI · SQLite |
-| **Devices** | Virtual household simulator with a 2D viewer + a physical Tapo light | MQTT |
+| **Server** | Extract items → retrieve similar cases → judge intent → create tasks → confirm plan | FastAPI · Docker · Amazon EC2 · Claude API |
+| **Database** | Server data and knowledge base cases with embeddings | PostgreSQL + pgvector · Amazon RDS |
+| **Knowledge Base** | Synthetic purchase-intent cases, cross-labeled by three LLMs | Gemini · ChatGPT · Claude · GitHub Actions · BGE-M3 |
+| **Home Hub** | Pull the plan, wait for triggers, execute, read back, restore | Python · FastAPI · SQLite · MQTT |
+| **Devices** | Home appliances and IoT devices (virtual simulator + a physical Tapo light) | MQTT |
 
 <br/>
 
