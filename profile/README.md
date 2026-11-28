@@ -50,7 +50,7 @@ An order can point to a gathering, a trip, a new pet, a seasonal change, and mor
 ## 🔧 Architecture Design
 
 <p align="center">
-  <img src="./assets/architecture-v2.png" alt="SPIRA Architecture" width="100%">
+  <img src="./assets/architecture-v4.png" alt="SPIRA Architecture" width="100%">
 </p>
 
 | Part | Role | Stack |
@@ -59,7 +59,7 @@ An order can point to a gathering, a trip, a new pet, a seasonal change, and mor
 | **Server** | Extract items → retrieve similar cases → judge intent → create tasks → confirm plan | FastAPI · Docker · Amazon EC2 · Claude API |
 | **Database** | Server data and knowledge base cases with embeddings | PostgreSQL + pgvector · Amazon RDS |
 | **Knowledge Base** | Synthetic purchase-intent cases, cross-labeled by three LLMs | Gemini · ChatGPT · Claude · GitHub Actions · BGE-M3 |
-| **Home Hub** | Pull the plan, wait for triggers, execute, read back, restore | Python · FastAPI · SQLite · MQTT |
+| **Home Hub** | Pull the plan, wait for triggers, execute, read back, restore | e.g. LG ThinQ ON (demo: Python · FastAPI · SQLite) |
 | **Devices** | Home appliances and IoT devices (virtual simulator + a physical Tapo light) | MQTT |
 
 <br/>
